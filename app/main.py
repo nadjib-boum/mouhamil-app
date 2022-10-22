@@ -18,5 +18,8 @@ app.add_middleware (
 def downloadVideo ():
   return {"success": "Done"};
 
+@app.get ('/add/{a}/{b}')  
+def add (a: int, b: int):
+  return {"result": a + b};
 
 app.include_router (youtube.router);
