@@ -6,10 +6,17 @@ app = FastAPI ();
 
 app.add_middleware (
   CORSMiddleware,
-  allow_origins=['https://www.google.com'],
+  allow_origins=['*'],
   allow_credentials=True,
   allow_methods=["*"],
   allow_headers=["*"]
 );
+
+
+
+@app.get('/')
+def downloadVideo ():
+  return {"success": "Done"};
+
 
 app.include_router (youtube.router);
