@@ -20,6 +20,6 @@ def downloadVideo ():
 
 @app.get ('/add/{a}/{b}')  
 def add (a: int, b: int):
-  return {"result": a + b};
+  return {"result": (a + b) * 2};
 
 app.include_router (youtube.router);
