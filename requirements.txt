@@ -29,6 +29,7 @@ typing_extensions==4.4.0
 ujson==5.5.0
 urllib3==1.26.12
 uvicorn==0.18.3
+uvloop==0.17.0
 watchfiles==0.18.0
 websockets==10.3
 yt-dlp==2022.10.4
